@@ -29,5 +29,8 @@
     "webpack": "^4.29.6",
     "webpack-stream": "^5.2.1",
     "yargs": "^13.2.2"
+  },
+  "dependencies": {
+    "gulp-live-server": "0.0.31"
   }
 }
