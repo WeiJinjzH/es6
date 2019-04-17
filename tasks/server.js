@@ -11,9 +11,9 @@ gulp.task('serve', (cb) => {
     server.start(); // 启动服务器
 
     gulp.watch(['server/public/**/*.js', 'server/public/**/*.ejs'], function(file) {
-        server.notify.apply(server, [file]);
+        server.notify.apply(server, [file]); // 热更新
     });
     gulp.watch(['server/routes/**/*.js', 'server/app.js'], function() {
-        server.start.bind(server)();
+        server.start.bind(server)();  // 重启
     });
 })
