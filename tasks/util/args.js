@@ -10,7 +10,7 @@ const args = yargs
 .option('watch', { // 要不要自动编译
     boolean: true,
     default: false,
-    describe: 'watch all files'
+    describe: 'watch all files',
 })
 
 .option('verbose', { // 要不要持续输出命令行的执行日志
@@ -20,7 +20,7 @@ const args = yargs
 })
 
 .option('sourcemaps', { // 强制生成sourcemaps
-    describe: 'force the creation of sourcemaps'
+    describe: 'force the creation of sourcemaps',
 })
 
 .option('port', { // 端口选项
@@ -31,3 +31,4 @@ const args = yargs
 
 .argv // 对输入的命令行以字符串的形式进行解析
 
+export default args;

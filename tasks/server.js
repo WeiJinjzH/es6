@@ -3,7 +3,7 @@ import gulpif from 'gulp-if';
 import liveserver from 'gulp-live-server';
 import args from './util/args';
 
-gulp.task('serve', (cb) => {
+gulp.task('server', (cb) => {
     if (!args.watch) { // 不是处于监听状态下
         return cb()
     }
